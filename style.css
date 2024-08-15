@@ -1,0 +1,63 @@
+/* styles.css */
+
+/* Apply box-sizing to all elements */
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+
+body{
+    margin: 0;
+    overflow-x: hidden;
+    font-family: 'Courier New', Courier, monospace;
+    min-height: 100vh;
+    background-color: lightgray;
+}
+
+/* Navbar styling */
+.navbar {
+    position: sticky;
+    top: 0;
+    padding: 10px 20px; /* Padding around the navbar */
+    z-index: 1000; /* Ensure the navbar is above other content */
+    width: 100%;
+    background-color: white;
+}
+
+/* Container for brand and menu */
+.navbar-content {
+    display: flex;
+    justify-content: space-between; /* Space between brand and menu */
+    align-items: center; /* Center items vertically */
+}
+
+/* Navbar menu styling */
+.navbar-menu {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    list-style-type: none; /* Remove default list styling */
+}
+
+/* Navbar menu items styling */
+.navbar-menu li {
+    margin: 0 15px; /* Spacing between items */
+}
+
+/* Navbar links styling */
+.navbar-menu a {
+    text-decoration: none;
+    font-weight: bold;
+}
+
+/* Adding hover effect */
+.navbar-menu a:hover {
+    color: red;
+}
+
+/* Brand styling */
+.brand {
+    color: red;
+    cursor: default;
+    font-size: 18px; /* Font size for the brand */
+}
